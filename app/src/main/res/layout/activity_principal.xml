@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="CALCULADORA"
+               android:textSize="40dp"
+               android:textColor="#120881"
+               android:textStyle="bold"
+               android:gravity="center"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Ingrese datos"
+               android:textSize="30dp"
+               android:textColor="#000"
+               android:textStyle="bold"
+               android:gravity="center"/>
+           <EditText
+               android:id="@+id/primerDato"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Primer numero"
+               android:textSize="40dp"
+               android:inputType="number"/>
+
+           <EditText
+               android:id="@+id/segundoDato"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Segundo numero"
+               android:textSize="40dp"
+               android:inputType="number"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="20dp"
+               android:weightSum="4">
+
+               <Button
+                   android:id="@+id/btnSuma"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="+"
+                   android:textSize="50dp"
+                   android:onClick="sumar"/>
+
+               <Button
+                   android:id="@+id/btnresta"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="-"
+                   android:textSize="50dp"
+                   android:layout_weight="1"
+                   android:onClick="restar"/>
+               <Button
+                   android:id="@+id/btnMulti"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="x"
+                   android:textSize="50dp"
+                   android:layout_weight="1"
+                   android:onClick="multiplicar"/>
+               <Button
+                   android:id="@+id/btnDivision"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="/"
+                   android:textSize="50dp"
+                   android:layout_weight="1"
+                   android:onClick="dividir"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>
